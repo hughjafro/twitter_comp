@@ -5,6 +5,9 @@ name = "pypi"
 
 [packages]
 flask = "*"
+tweepy = "*"
+basilica = "*"
+python-decouple = "*"
 
 [dev-packages]
 "flake8" = "*"

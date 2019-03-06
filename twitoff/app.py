@@ -1,4 +1,5 @@
 """Main application and routing logic for Twitter Comp"""
+from decouple import config
 from flask import Flask, render_template, request
 from .models import DB, User
 
@@ -7,9 +8,9 @@ def create_app():
     """Create and configure an instance of the Flask application."""
     """config is basically a python dict"""
     app = Flask(__name__)
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///db.sqlite3'
+    app.config['SQLALCHEMY_DATABASE_URI'] = config('DATABASE_URL')
     app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-    app.config['ENV'] = 'debug'
+    app.config['ENV'] = config('ENV')
     DB.init_app(app)
 
     @app.route('/')
