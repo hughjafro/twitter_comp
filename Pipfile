@@ -8,6 +8,7 @@ flask = "*"
 tweepy = "*"
 basilica = "*"
 python-decouple = "*"
+python-dotenv = "*"
 
 [dev-packages]
 "flake8" = "*"
