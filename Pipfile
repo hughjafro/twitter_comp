@@ -9,6 +9,8 @@ tweepy = "*"
 basilica = "*"
 python-decouple = "*"
 python-dotenv = "*"
+scikit-learn = "*"
+gunicorn = "*"
 
 [dev-packages]
 "flake8" = "*"
