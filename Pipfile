@@ -11,6 +11,7 @@ python-decouple = "*"
 python-dotenv = "*"
 scikit-learn = "*"
 gunicorn = "*"
+"psycopg2" = "*"
 
 [dev-packages]
 "flake8" = "*"
