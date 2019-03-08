@@ -12,6 +12,7 @@ python-dotenv = "*"
 scikit-learn = "*"
 gunicorn = "*"
 "psycopg2" = "*"
+flask-sqlalchemy = "*"
 
 [dev-packages]
 "flake8" = "*"
